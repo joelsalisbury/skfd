@@ -1,0 +1,30 @@
+// Variables go here
+
+//Global Page Variables
+$page-max-width:80em;
+$page-container-padding:1em;
+
+//Breakpoints
+// grid variables
+$grid-columns: 12;
+$grid-max-width: 75em;
+ 
+ 
+// breakpoints
+$breakpoint-tablet: "only screen and (min-width: 600px)";
+$breakpoint-tabletLarge: "only screen and (min-width: 768px)";
+$breakpoint-desktop: "only screen and (min-width: 1000px)";
+
+
+$tabletWidth:600px;
+$tabletLargeWidth:768px;
+$desktopWidth:1000px;
+
+// colors
+
+
+$white: #ffffff;
+$lightGray: #BBC4CA;
+$medGray: #839097;
+$darkGray: #525E66;
+$accentRed: #2B0808;

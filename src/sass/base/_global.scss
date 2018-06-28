@@ -1,0 +1,498 @@
+// Global CSS goes here
+body{
+	background-color:$darkGray;
+	color:$white;
+	font-family: 'Fira Sans', sans-serif;
+    font-size: 14px;
+}
+
+p, blockquote {
+    line-height: 32px;
+    font-size: 16px;
+}
+
+blockquote {
+    background-color: #fff;
+    border: 1px solid #333;
+    padding: 15px;
+    font-size:1em;
+    margin:10px 0px;
+    font-style: italic;
+}
+
+.hide-for-mobile {
+    display:none;
+}
+
+address {
+	font-style:normal;
+}
+
+
+.nav-menu {
+	list-style-type:none;
+	width:100%;
+	background-color:$darkGray;
+	text-align:center;
+	margin:0px;
+	padding:0px;
+	clear:both;
+}
+
+.nav-toggle {
+	float:right;
+	margin-top:20px;
+}
+
+.nav-item {
+	padding:15px 0px;
+}
+
+.nav-link {
+	padding:10px 0px;
+}
+
+#head-main {
+
+	z-index:5;
+	width:100%;
+	transition:0.5s;
+}
+
+.head-bump-down {
+	top:30px!important;
+}
+
+.logo-link {
+	float:left;
+	width:210px;
+	margin-top:10px;
+}
+
+.altNav {
+	background: $darkGray;
+}
+
+#head-main.altNav {
+  margin-top:0px;
+}
+
+.nav-link {
+	color:$white;
+	text-transform:uppercase;
+	font-size:13px;
+	letter-spacing:1px;
+	line-height:14px;
+	text-decoration:none;
+}
+
+.scroll-wrap {
+	position:absolute;
+	bottom:50px;
+	width:100%;
+	z-index:999;
+	left:0px;
+	right:0px;
+}
+
+.scroll-down {
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size: 10px;
+	letter-spacing: 2px;
+	color: #ffc20e;
+}
+
+h1 {
+	font-style: normal;
+	font-weight: 400;
+} 
+
+h2 {
+	color:$white;
+	text-transform:uppercase;
+	margin-bottom:0px;
+	text-align:center;
+	font-size:24px;
+	margin-top:0px;
+}
+
+.tagline {
+	padding:0px;
+	margin:0px;
+	max-width: 80%;
+	margin:0 auto;
+	margin-top:10px;
+}
+
+.dark-overlay{
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	background-color:$darkGray;
+	opacity:0.2;
+}
+
+.lilarrow {
+	display:block;
+	font-size:18px;
+	position:relative;
+	top:-4px;
+}
+
+h4 {
+	text-transform:uppercase;
+	letter-spacing:1px;
+}
+
+
+.btn {
+	border-radius:2px;
+	padding:10px 35px;
+	text-decoration:none;
+	margin-top:10px;
+	display:inline-block;
+	font-size:14px;
+	transition:0.3s;
+	background-color:$accentRed;
+	color:$white;
+	text-transform:uppercase;
+	text-align:center;
+	border:none;
+}
+ 
+.btn:hover {
+	background-color:$darkGray;
+}
+
+// .btn--gray {
+// 	background-color:$lightGray;
+// 	color:$darkGray
+// }
+
+// .btn--darkGray {
+// 	background-color:$darkGray;
+// 	color:$lightGray;
+// 	&:hover {
+// 		background-color:$lightGray;
+// 		color:$darkGray;
+// 	}
+// }
+
+#why-hero, #contact-hero, #work-hero {
+	height:50vh;
+	position:relative;
+}
+
+.section--hero{
+	height:100vh;
+	background-image: url(../img/pfd-hero.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	text-align:center;
+	display: flex;
+    align-items: center;
+	position:relative; 
+
+    &::before {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    bottom: 0;
+	    right: 0;
+	    background-color: #000;
+	    opacity: 0.5;
+	    content:"";
+	}
+
+	h1{
+		small {
+			font-size:3vw;
+			display: block;
+			font-style: normal;
+			font-weight: 400;
+		}
+		font-size: 10vw;
+	    font-weight: 800;
+	    text-transform: uppercase;
+	    color: #fff;
+	    text-align: center;
+	    margin: 0 0 0px;
+	    line-height: 12vw;
+	    letter-spacing: 2px;
+	}
+
+	h2 {
+		color:$white;
+		text-transform: uppercase;
+		padding-top:25px;
+		font-weight:400;
+		font-size:16px;
+		letter-spacing:3px;
+		strong {
+			font-weight: bold;
+			display:block;
+		}
+
+		max-width:95%;
+		margin:0 auto;
+	}
+
+	.cta-wrap {
+		margin-top:50px;
+
+		.btn {
+			margin:10px 25px;
+		}
+	}
+}
+
+.dark-on-light {
+	background-color:$white;
+	color:$darkGray;
+}
+
+.small-hero {
+	padding:15px 0px;
+}
+
+.light-on-dark {
+	background-color:$darkGray;
+	color:$lightGray;
+}
+
+.dark-on-accent {
+	background-color:lighten($lightGray, 15%);
+	color:$darkGray;
+}
+
+h3 {
+	font-weight:normal;
+	font-style:italic;
+	margin-top:0px;
+}
+
+.imgbg {
+	background-repeat:no-repeat;
+	background-size:cover;
+	min-height:40vh;
+	position:relative;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	//border:10px solid white;
+	//background-attachment:fixed;
+
+	&::before {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    bottom: 0;
+	    right: 0;
+	    background-color: #000;
+	    opacity: 0.4;
+	    content:"";
+	}
+
+
+	h2{
+		position: relative;
+	}
+}
+
+.patios-row {
+	//background-color:$medGray;
+	border-top:5px solid white;
+	.imgbg {
+		background-image:url(../img/patios.jpg); 
+	}
+}
+
+.walkways-row {
+	//background-color:$darkGray;
+
+	.imgbg {
+		background-image:url(../img/walkways.jpg);
+	}
+}
+
+.steps-row {
+	//background-color:$medGray;
+	border-top:5px solid white;
+
+	.imgbg {
+		background-image:url(../img/steps.jpg);
+	}
+}
+
+.pavers-hero {
+	background-image:url(../img/cracked.jpg);
+}
+
+.pavervsstamped-row {
+	//background-color:$darkGray;
+	border-top:5px solid white;
+
+	.imgbg {
+		background-image:url(../img/cracked.jpg);
+	}
+}
+
+.unilok-row {
+	//background-color:$medGray;
+
+	.imgbg {
+		background-color:#ff3333;
+	}
+}
+
+.about-row {
+	.imgbg {
+		background-image:url(../img/about-hero.jpg); 
+	}
+}
+
+
+
+.directions-blurb {
+	position:relative;
+	padding-bottom:40px;
+}
+
+.section--map, .section--map .row {
+	min-height:450px;
+}
+
+.social-link {
+	color:$white;
+	text-align:center;
+	border-radius:100%;
+	display:inline-block;
+	font-size: 16px;
+	width: 28px;
+	line-height: 28px;
+	margin:0px 5px;
+}
+
+.social-link:hover {
+	border:none!important;
+}
+
+#map {
+	min-height:60vh;
+	top:0px;
+	bottom:0px;
+	width:100%;
+	position:absolute!important;
+}
+
+
+.section--contact {
+	height: auto;
+	font-size:18px;
+
+	p{
+		margin:2px 0px;
+		font-size:18px;
+	}
+
+	h4{
+		font-size:24px;
+		font-style:italic;
+
+	}
+
+	.column-3, .column-9 {
+		padding:0px;
+	}
+	
+	.column-3 {
+		margin-top:25px;
+	}
+	
+
+	i {
+		
+		padding-right:5px;
+	}
+
+	a {
+		font-weight: 400;
+		font-style:italic;
+		margin: 2px 0px;
+    	display: inline-block;
+	}
+}
+
+form {
+	width:100%;
+}
+
+label {
+	cursor:pointer;
+}
+
+.input-text {
+	height:42px;
+	border:1px solid $darkGray;
+	text-indent:10px;
+	width:100%;
+	margin-top:10px;
+	font-size:16px;
+}
+
+.input-textarea {
+	height:220px;
+}
+
+.input-email {
+	width:100%;
+	margin-left:0px;
+	margin-bottom:15px;
+}
+
+#footer-main {
+  height:200px;
+  background:$darkGray;
+  padding:60px 0px;
+  text-align: center;
+  address {
+  	margin:15px 0px;
+  }
+}
+
+.footer-logo {
+	display:block;
+	width:200px;
+	margin:0 auto;
+}
+
+.copyright {
+	font-size:12px;
+}
+
+.section-text {
+	position:relative;
+
+}
+
+.spaced-list {
+	li {
+		margin:15px 0px;
+	}
+}
+
+
+.our-work {
+	.work-item {
+		max-height: 640px;
+		object-fit: cover;
+	}
+	img {
+		
+	}
+}
+
+
