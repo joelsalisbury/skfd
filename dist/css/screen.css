@@ -532,7 +532,7 @@ address {
   margin-top: 10px; }
 
 .altNav {
-  background: #525E66; }
+  background: #000; }
 
 #head-main.altNav {
   margin-top: 0px; }
@@ -877,7 +877,7 @@ label {
     clear: none;
     display: block;
     list-style-type: none;
-    margin-top: 35px; }
+    margin-top: 5px; }
   .nav-item {
     display: inline-block;
     margin: 0px 15px;
@@ -910,7 +910,7 @@ label {
   .directions-blurb {
     float: right; }
   .text-wrap {
-    max-width: 60em;
+    max-width: 70em;
     margin-left: 50px; }
     .text-wrap.u-floatRight {
       margin-right: 50px;
